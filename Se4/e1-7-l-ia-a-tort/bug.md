@@ -23,3 +23,12 @@ Il y a deux mondes : la **mémoire** (la boîte `n`) et l'**écran** (le `<p id=
 La ligne ajoutée va chercher le paragraphe `affiche` dans la page (le DOM) et remplace son texte par la valeur actuelle de `n`. Comme elle est dans la fonction du clic, elle s'exécute à chaque clic, juste après que `n` a changé : la boîte et l'écran restent synchronisés.
 
 Il n'y avait pas d'erreur rouge dans la console : le code « marchait », il oubliait juste une étape. C'est pour ça qu'il faut lire le code, pas seulement faire confiance à « ça marche ».
+
+## Pour les rapides : bouton Reset
+
+Nouveau bouton `Reset`. Au clic, il fait **deux** choses, dans cet ordre :
+
+1. `n = 0;` → remet la boîte à zéro (sinon le prochain +1 repartirait de l'ancienne valeur) ;
+2. `document.getElementById("affiche").textContent = n;` → recopie la boîte à l'écran (sinon l'écran resterait à 3 alors que `n` vaut 0).
+
+Vérifié : +1, +1, +1 → `3` ; Reset → `0` ; +1 → `1`.
