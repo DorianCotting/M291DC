@@ -7,10 +7,14 @@
 
 ## Chemin
 
-1. **Écran 1 — Accueil :** Inès découvre la promesse de l'app et touche la carte d'humeur « Fatigué·e ». Elle peut écrire une demande libre, puis elle touche **Trouver un film**. *Feedback : la carte choisie est marquée comme sélectionnée.*
-2. **Écran 2 — Filtres et résultats :** elle active les puces « 90-120 min », « Comédie » et « Entre amis », puis touche **Voir mes 3 films**. *Feedback : « Analyse de tes choix… », puis 3 cartes de films.*
-3. **Écran 3 — Fiche film :** elle touche une carte et consulte l'affiche, l'année, la durée, le genre, le résumé et la section « Pourquoi ce film ». *Feedback : le lien « Retour aux 3 films » reste visible.*
-4. **Écran 3 — Action :** elle touche **J'aime**. *Confirmation immédiate : « Bon film ! Ce choix est noté pour ce soir. »*
+| Étape | Écran traversé | Action de l'utilisatrice | Feedback attendu |
+| --- | --- | --- | --- |
+| 1 | Écran 1 — Accueil | Inès lit la promesse de l'app et touche la carte d'humeur « Fatigué·e ». | La carte passe à l'état sélectionné, avec une coche. |
+| 2 | Écran 1 — Accueil | Elle écrit éventuellement une demande libre, puis touche **Trouver un film**. | L'écran 2 s'ouvre et rappelle « Humeur : Fatigué·e ». |
+| 3 | Écran 2 — Filtres et résultats | Elle active les puces « 90-120 min », « Comédie » et « Entre amis ». | Chaque puce active change de couleur et affiche une coche. |
+| 4 | Écran 2 — Filtres et résultats | Elle touche **Voir mes 3 films**. | Le message « Analyse de tes choix… » s'affiche, puis 3 cartes de films apparaissent. |
+| 5 | Écran 3 — Fiche film | Elle touche une carte, puis lit le résumé et la section « Pourquoi ce film ». | La fiche s'ouvre et le lien « Retour aux 3 films » reste visible. |
+| 6 | Écran 3 — Fiche film | Elle touche **J'aime**. | La confirmation s'affiche : « Bon film ! Ce choix est noté pour ce soir. » |
 
 ## Variantes
 
