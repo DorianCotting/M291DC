@@ -1,0 +1,52 @@
+:root {
+  --fond: #f5efe3;
+  --carte: #fffaf0;
+  --entete: #dde5d3;
+  --texte: #2b3a2c;
+  --secondaire: #526050;
+  --actif: #55694f;
+  --action: #a0452a;
+  --sur-couleur: #ffffff;
+  --erreur: #9b1c1c;
+  --contour: 2px solid var(--texte);
+}
+* { box-sizing: border-box; margin: 0; }
+html, body { background: var(--fond); }
+body { color: var(--texte); font: 16px/1.45 "Avenir Next", "Trebuchet MS", sans-serif; }
+.entete { padding: 16px; background: var(--entete); }
+.marque { font: 28px/1.1 "Arial Rounded MT Bold", "Avenir Next", sans-serif; }
+main { max-width: 480px; margin: 0 auto; padding: 8px 16px 32px; }
+h1, h2 { font-family: "Arial Rounded MT Bold", "Avenir Next", sans-serif; font-weight: 400; }
+h1 { margin: 12px 0; font-size: 24px; }
+h2 { margin: 18px 0 8px; font-size: 19px; }
+h3 { font-size: 18px; line-height: 1.2; }
+h1:focus, h2:focus { outline: none; }
+button { font: inherit; color: var(--texte); cursor: pointer; }
+:focus-visible { outline: 3px solid var(--texte); outline-offset: 3px; }
+
+.humeurs { display: grid; gap: 8px; margin-bottom: 14px; }
+.humeur, .puce, .secondaire, input { background: var(--carte); border: var(--contour); }
+.humeur { min-height: 52px; padding: 0 14px; border-radius: 16px; text-align: left; }
+.puces { display: flex; flex-wrap: wrap; gap: 8px; }
+.puce { min-height: 48px; padding: 0 14px; border-radius: 24px; }
+[aria-pressed="true"] { color: var(--sur-couleur); background: var(--actif); border-color: var(--actif); font-weight: 700; }
+[aria-pressed="true"]::before { content: "✓ "; }
+
+label { display: block; margin-bottom: 6px; }
+input { width: 100%; min-height: 48px; padding: 0 12px; border-radius: 12px; font: inherit; color: var(--texte); }
+input::placeholder { color: var(--secondaire); opacity: 1; }
+
+.action, .secondaire { display: block; width: 100%; min-height: 52px; margin-top: 12px; border-radius: 26px; font-weight: 700; }
+.action { color: var(--sur-couleur); background: var(--action); border: 0; }
+.deux { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+.film { display: flex; gap: 12px; padding: 12px; margin-bottom: 10px; background: var(--carte); border: var(--contour); border-radius: 18px; }
+.film .ouvrir { display: block; width: 100%; min-height: 48px; margin-top: 8px; background: transparent; border: var(--contour); border-radius: 24px; font-weight: 700; }
+.affiche { display: grid; place-items: center; flex: none; width: 74px; height: 110px; background: var(--entete); border-radius: 12px; font-size: 13px; }
+.affiche.grande { width: 100%; height: 200px; margin-top: 12px; }
+.infos, .note { color: var(--secondaire); font-size: 14px; }
+.infos { margin: 2px 0 6px; }
+.note { margin-bottom: 10px; }
+.erreur { margin-top: 10px; color: var(--erreur); font-weight: 700; }
+.statut { margin-top: 12px; font-weight: 700; }
+.confirmation:not(:empty) { padding: 12px; margin-top: 14px; background: var(--entete); border: var(--contour); border-radius: 12px; font-weight: 700; }

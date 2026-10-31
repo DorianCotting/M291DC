@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CineMood — maquette</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="entete">
+  <p class="marque">CineMood</p>
+  <p>Le bon film pour ce soir, sans compte.</p>
+</header>
+
+<main>
+  <section id="ecran-accueil">
+    <h1 tabindex="-1">Comment te sens-tu ?</h1>
+    <div class="humeurs" id="humeurs"></div>
+    <label for="demande">Quelque chose de particulier ? (facultatif)</label>
+    <input id="demande" type="text" placeholder="Ex. : pas trop triste">
+    <p class="erreur" id="erreur-humeur" role="alert"></p>
+    <button class="action" id="trouver" type="button">Trouver un film</button>
+  </section>
+
+  <section id="ecran-filtres" hidden>
+    <h1 tabindex="-1">Tes choix</h1>
+    <p>Humeur : <strong id="rappel-humeur"></strong></p>
+    <h2>Temps disponible</h2>
+    <div class="puces" id="puces-temps"></div>
+    <h2>Genres (1 à 3)</h2>
+    <div class="puces" id="puces-genres"></div>
+    <h2>Avec qui ?</h2>
+    <div class="puces" id="puces-contexte"></div>
+    <p class="erreur" id="erreur-genres" role="alert"></p>
+    <button class="action" id="voir" type="button">Voir mes 3 films</button>
+    <button class="secondaire" id="retour-accueil" type="button">← Changer d'humeur</button>
+    <p class="statut" id="statut" role="status"></p>
+    <div id="resultats" hidden>
+      <h2 tabindex="-1" id="titre-resultats">3 films pour toi</h2>
+      <p class="note">Maquette : films d'exemple, sans appel à l'IA.</p>
+      <div id="films"></div>
+      <button class="secondaire" id="autre" type="button">Autre proposition</button>
+    </div>
+  </section>
+
+  <section id="ecran-fiche" hidden>
+    <button class="secondaire" id="retour-films" type="button">← Retour aux 3 films</button>
+    <div class="affiche grande" aria-hidden="true">Affiche</div>
+    <h1 tabindex="-1" id="fiche-titre"></h1>
+    <p class="infos" id="fiche-infos"></p>
+    <h2>Résumé</h2>
+    <p id="fiche-resume"></p>
+    <h2>Pourquoi ce film</h2>
+    <p id="fiche-pourquoi"></p>
+    <button class="action" id="jaime" type="button">J'aime</button>
+    <div class="deux">
+      <button class="secondaire" id="refuser" type="button">Pas pour moi</button>
+      <button class="secondaire" id="autre-fiche" type="button">Autre proposition</button>
+    </div>
+    <p class="confirmation" id="confirmation" role="status"></p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
