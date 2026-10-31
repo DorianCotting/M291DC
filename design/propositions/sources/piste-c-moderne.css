@@ -1,0 +1,11 @@
+:root {
+  --fond: #ffffff; --texte: #0b0b0f; --secondaire-texte: #4a4a55;
+  --police-texte: "Helvetica Neue", Arial, sans-serif; --police-titre: "Helvetica Neue", Arial, sans-serif;
+  --h1: 36px; --graisse-titre: 800; --espacement-titre: -0.02em;
+  --entete-fond: #0b0b0f; --entete-texte: #ffffff; --entete-bord: 0;
+  --puce-fond: #ffffff; --puce-bord: 2px solid #0b0b0f; --rayon-puce: 6px;
+  --actif-fond: #0b0b0f; --actif-texte: #ffffff;
+  --action-fond: #d6002a; --action-texte: #ffffff; --secondaire-bord: 2px solid #0b0b0f; --rayon-bouton: 6px;
+  --carte-fond: #ffffff; --carte-bord: 2px solid #0b0b0f; --rayon-carte: 6px;
+  --affiche-fond: #0b0b0f; --affiche-texte: #ffffff; --rayon-affiche: 3px;
+}

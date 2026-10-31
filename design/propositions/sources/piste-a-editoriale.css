@@ -1,0 +1,11 @@
+:root {
+  --fond: #fbf8f1; --texte: #14233f; --secondaire-texte: #4f5b6e;
+  --police-texte: Georgia, "Times New Roman", serif; --police-titre: Georgia, "Times New Roman", serif;
+  --h1: 38px; --graisse-titre: 400; --espacement-titre: 0;
+  --entete-fond: transparent; --entete-texte: #14233f; --entete-bord: 3px double #14233f;
+  --puce-fond: transparent; --puce-bord: 1px solid #14233f; --rayon-puce: 2px;
+  --actif-fond: #14233f; --actif-texte: #fbf8f1;
+  --action-fond: #14233f; --action-texte: #fbf8f1; --secondaire-bord: 1px solid #14233f; --rayon-bouton: 2px;
+  --carte-fond: transparent; --carte-bord: 1px solid #c9c9c5; --rayon-carte: 0;
+  --affiche-fond: #e6e6e3; --affiche-texte: #14233f; --rayon-affiche: 0;
+}

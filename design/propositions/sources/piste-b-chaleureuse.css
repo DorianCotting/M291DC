@@ -1,0 +1,11 @@
+:root {
+  --fond: #f5efe3; --texte: #2b3a2c; --secondaire-texte: #526050;
+  --police-texte: "Avenir Next", "Trebuchet MS", sans-serif; --police-titre: "Arial Rounded MT Bold", "Avenir Next", sans-serif;
+  --h1: 34px; --graisse-titre: 400; --espacement-titre: 0;
+  --entete-fond: #dde5d3; --entete-texte: #2b3a2c; --entete-bord: 0;
+  --puce-fond: #fffaf0; --puce-bord: 1px solid #8a9a82; --rayon-puce: 24px;
+  --actif-fond: #55694f; --actif-texte: #ffffff;
+  --action-fond: #a0452a; --action-texte: #ffffff; --secondaire-bord: 2px solid #55694f; --rayon-bouton: 26px;
+  --carte-fond: #fffaf0; --carte-bord: 1px solid #dfd5c1; --rayon-carte: 18px;
+  --affiche-fond: #dde5d3; --affiche-texte: #2b3a2c; --rayon-affiche: 12px;
+}

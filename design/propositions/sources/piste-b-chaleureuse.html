@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CineMood — piste-b-chaleureuse</title>
+<link rel="stylesheet" href="piste-b-chaleureuse.css">
+<link rel="stylesheet" href="base.css">
+</head>
+<body>
+<header class="entete">
+  <h1>CineMood</h1>
+  <p>Le bon film pour ce soir, sans compte.</p>
+</header>
+<main>
+  <section aria-labelledby="titre-filtres">
+    <h2 id="titre-filtres">Tes choix</h2>
+    <p class="humeur">Humeur : <strong>Fatigué·e</strong></p>
+    <div class="puces">
+      <button class="puce">&lt; 90 min</button>
+      <button class="puce active" aria-pressed="true">90-120 min</button>
+      <button class="puce">&gt; 2 h</button>
+      <button class="puce active" aria-pressed="true">Comédie</button>
+      <button class="puce">Drame</button>
+      <button class="puce active" aria-pressed="true">Entre amis</button>
+      <button class="puce">Famille</button>
+    </div>
+    <button class="action">Voir mes 3 films</button>
+  </section>
+  <section aria-labelledby="titre-films">
+    <h2 id="titre-films">3 films pour toi</h2>
+    <article class="film">
+      <div class="affiche" aria-hidden="true">Affiche</div>
+      <div>
+        <h3>Intouchables</h3>
+        <p class="infos">2011 · 112 min · Comédie dramatique</p>
+        <p class="pourquoi"><strong>Pourquoi ce film :</strong> une histoire touchante et drôle, facile à suivre après une longue journée.</p>
+      </div>
+    </article>
+    <article class="film">
+      <div class="affiche" aria-hidden="true">Affiche</div>
+      <div>
+        <h3>La Famille Bélier</h3>
+        <p class="infos">2014 · 105 min · Comédie dramatique</p>
+        <p class="pourquoi"><strong>Pourquoi ce film :</strong> un récit chaleureux, assez court pour finir avant 23 h.</p>
+      </div>
+    </article>
+    <article class="film">
+      <div class="affiche" aria-hidden="true">Affiche</div>
+      <div>
+        <h3>Paddington 2</h3>
+        <p class="infos">2017 · 103 min · Comédie</p>
+        <p class="pourquoi"><strong>Pourquoi ce film :</strong> un film doux et plein d'humour, à partager entre amis.</p>
+      </div>
+    </article>
+    <button class="secondaire">Autre proposition</button>
+  </section>
+</main>
+</body>
+</html>

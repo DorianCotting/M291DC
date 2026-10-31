@@ -1,0 +1,20 @@
+* { box-sizing: border-box; margin: 0; }
+html, body { background: var(--fond); }
+body { width: 390px; color: var(--texte); font-family: var(--police-texte); font-size: 16px; line-height: 1.45; }
+.entete { padding: 22px 16px 18px; background: var(--entete-fond); color: var(--entete-texte); border-bottom: var(--entete-bord); }
+h1 { font-family: var(--police-titre); font-size: var(--h1); font-weight: var(--graisse-titre); line-height: 1.1; letter-spacing: var(--espacement-titre); }
+main { padding: 4px 16px 24px; }
+h2 { margin: 18px 0 10px; font-family: var(--police-titre); font-size: 20px; font-weight: var(--graisse-titre); }
+h3 { font-family: var(--police-titre); font-size: 18px; font-weight: var(--graisse-titre); line-height: 1.2; }
+.humeur { margin-bottom: 10px; }
+.puces { display: flex; flex-wrap: wrap; gap: 8px; }
+button { font: inherit; cursor: pointer; }
+.puce { min-height: 48px; padding: 0 14px; color: var(--texte); background: var(--puce-fond); border: var(--puce-bord); border-radius: var(--rayon-puce); }
+.puce.active { color: var(--actif-texte); background: var(--actif-fond); border-color: var(--actif-fond); font-weight: 700; }
+.action, .secondaire { display: block; width: 100%; min-height: 52px; margin-top: 14px; border-radius: var(--rayon-bouton); font-weight: 700; }
+.action { color: var(--action-texte); background: var(--action-fond); border: 0; }
+.secondaire { color: var(--texte); background: transparent; border: var(--secondaire-bord); }
+.film { display: flex; gap: 12px; padding: 12px; margin-bottom: 10px; background: var(--carte-fond); border: var(--carte-bord); border-radius: var(--rayon-carte); }
+.affiche { display: grid; place-items: center; flex: none; width: 74px; height: 110px; color: var(--affiche-texte); background: var(--affiche-fond); border-radius: var(--rayon-affiche); font-size: 13px; }
+.infos { margin: 2px 0 6px; color: var(--secondaire-texte); font-size: 14px; }
+.pourquoi { font-size: 15px; }
