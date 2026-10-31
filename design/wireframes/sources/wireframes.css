@@ -1,0 +1,30 @@
+:root {
+  --noir: #111;
+  --gris-fonce: #555;
+  --gris: #bbb;
+  --gris-clair: #eee;
+  --blanc: #fff;
+}
+* { box-sizing: border-box; margin: 0; }
+html, body { background: var(--blanc); }
+body { width: 390px; padding: 16px; color: var(--noir); font: 15px/1.35 "Comic Sans MS", "Marker Felt", sans-serif; }
+header { padding-bottom: 12px; border-bottom: 2px solid var(--noir); margin-bottom: 14px; }
+h1 { font-size: 24px; }
+h2 { font-size: 16px; margin: 14px 0 8px; }
+p.petit { color: var(--gris-fonce); font-size: 13px; }
+.champ { display: flex; align-items: center; min-height: 48px; padding: 0 12px; border: 2px solid var(--noir); margin: 10px 0; color: var(--gris-fonce); }
+.carte { display: flex; align-items: center; min-height: 56px; padding: 8px 12px; border: 2px solid var(--noir); margin-bottom: 8px; background: var(--blanc); }
+.carte.active { background: var(--gris); border-width: 4px; font-weight: bold; }
+.film { align-items: stretch; gap: 10px; }
+.film .texte { flex: 1; }
+.film .texte b { display: block; }
+.puces { display: flex; flex-wrap: wrap; gap: 6px; }
+.puce { display: flex; align-items: center; min-height: 48px; padding: 0 12px; border: 2px solid var(--noir); border-radius: 24px; font-size: 14px; }
+.puce.active { background: var(--noir); color: var(--blanc); }
+.bouton { display: flex; align-items: center; justify-content: center; min-height: 52px; margin-top: 10px; background: var(--noir); color: var(--blanc); font-weight: bold; }
+.bouton.second { background: var(--blanc); color: var(--noir); border: 2px solid var(--noir); font-weight: normal; }
+.deux { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.image { display: block; flex: none; background: var(--gris-clair); border: 2px solid var(--noir); }
+.image line { stroke: var(--noir); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.confirmation { padding: 12px; margin-top: 12px; border: 2px dashed var(--noir); background: var(--gris-clair); font-weight: bold; }
+.retour { display: flex; align-items: center; min-height: 48px; text-decoration: underline; }
