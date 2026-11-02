@@ -1,6 +1,6 @@
 # Tests utilisateurs et audit d'accessibilité — CineMood
 
-**Maquette testée :** [design/maquette/index.html](maquette/index.html) (double-clic pour l'ouvrir, à afficher en largeur mobile)  
+**Maquette testée :** [maquette/index.html](maquette/index.html) (double-clic pour l'ouvrir, à afficher en largeur mobile)  
 **Direction :** Piste B avec les contours contrastés de la Piste C ([critique.md](critique.md))  
 **Limite :** les films sont des exemples fixes ; l'IA n'est pas encore branchée.
 
