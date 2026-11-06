@@ -1,0 +1,53 @@
+/* s09-av1 — Carte d'humeur qui s'adapte à son conteneur, pas à la fenêtre */
+
+/* 1. Le parent devient un contexte de conteneur */
+.zone-cartes {
+  container-type: inline-size;
+  container-name: zone-cartes;
+}
+
+/* Disposition par défaut : verticale (colonne étroite) */
+.carte-cq {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 2px solid #2b3a2c;
+  border-radius: 16px;
+  background-color: #fffaf0;
+  color: #2b3a2c;
+}
+
+.carte-cq .vignette {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  background-color: #dde5d3;
+  font-size: 0.875rem;
+}
+
+.carte-cq h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.carte-cq p {
+  margin: 0;
+  color: #526050;
+}
+
+/* 2. Dès que le conteneur fait 400 px, la carte passe à l'horizontale */
+@container zone-cartes (min-width: 400px) {
+  .carte-cq {
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  .carte-cq .vignette {
+    grid-row: span 2;
+    aspect-ratio: 1;
+  }
+}
+
+/* Repli pour les navigateurs sans container queries : la carte reste verticale */

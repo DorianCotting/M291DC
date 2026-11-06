@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>s09-av1 — Container queries</title>
+  <link rel="stylesheet" href="container-queries.css">
+  <style>
+    body { margin: 0; padding: 16px; background: #f5efe3; color: #2b3a2c; font-family: "Avenir Next", system-ui, sans-serif; }
+    h1 { font-size: 1.5rem; }
+    .demo { display: grid; gap: 24px; }
+    .colonne-etroite { max-width: 260px; }
+    @media (min-width: 768px) {
+      .demo { grid-template-columns: 260px 1fr; align-items: start; }
+    }
+  </style>
+</head>
+<body>
+  <h1>La même carte dans deux conteneurs</h1>
+  <p>À gauche une colonne de 260 px : carte verticale. À droite une zone large : carte horizontale. La fenêtre est la même pour les deux.</p>
+  <div class="demo">
+    <section class="zone-cartes colonne-etroite" aria-label="Colonne étroite">
+      <article class="carte-cq">
+        <div class="vignette" aria-hidden="true">Affiche</div>
+        <h3>Fatigué·e</h3>
+        <p>Des histoires faciles à suivre, sans effort.</p>
+      </article>
+    </section>
+    <section class="zone-cartes" aria-label="Zone large">
+      <article class="carte-cq">
+        <div class="vignette" aria-hidden="true">Affiche</div>
+        <h3>Fatigué·e</h3>
+        <p>Des histoires faciles à suivre, sans effort.</p>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
