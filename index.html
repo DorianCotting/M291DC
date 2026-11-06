@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineMood — le bon film pour ce soir</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="entete">
+    <h1 class="logo">CineMood</h1>
+    <p class="slogan">Le bon film pour ce soir, sans compte.</p>
+    <nav aria-label="Navigation principale">
+      <!-- Les filtres (durée, genres, contexte) viendront en semaine 12 -->
+      <ul class="nav-liens">
+        <li><a href="#humeurs" aria-current="page">Humeurs</a></li>
+        <li><a href="#fonctionnement">Comment ça marche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenu">
+    <form class="demande" action="#humeurs">
+      <label for="demande">Quelque chose de particulier ? <span class="facultatif">(facultatif)</span></label>
+      <input id="demande" name="demande" type="text" placeholder="Ex. : pas trop triste, un film récent">
+    </form>
+
+    <section id="humeurs" aria-labelledby="titre-humeurs">
+      <h2 id="titre-humeurs">Comment te sens-tu ?</h2>
+      <div class="cartes-grille">
+        <article class="carte">
+          <h3>Bonne humeur</h3>
+          <p class="carte-texte">Des films lumineux pour prolonger une belle journée.</p>
+        </article>
+        <article class="carte">
+          <h3>Fatigué·e</h3>
+          <p class="carte-texte">Des histoires faciles à suivre, sans effort.</p>
+        </article>
+        <article class="carte">
+          <h3>Triste</h3>
+          <p class="carte-texte">Des films réconfortants qui font du bien.</p>
+        </article>
+        <article class="carte">
+          <h3>Envie de frissons</h3>
+          <p class="carte-texte">Du suspense pour rester accroché à l'écran.</p>
+        </article>
+        <article class="carte">
+          <h3>Romantique</h3>
+          <p class="carte-texte">Des histoires d'amour, tendres ou pétillantes.</p>
+        </article>
+        <article class="carte">
+          <h3>Envie de réfléchir</h3>
+          <p class="carte-texte">Des films qui posent des questions et restent en tête.</p>
+        </article>
+        <article class="carte">
+          <h3>Envie de rire</h3>
+          <p class="carte-texte">Des comédies pour décompresser.</p>
+        </article>
+      </div>
+      <!-- Le choix d'une humeur et le bouton seront branchés en JavaScript à partir de la semaine 11 -->
+      <p class="bientot">Bientôt : touche une humeur, puis « Trouver un film ».</p>
+    </section>
+
+    <aside id="fonctionnement" class="fonctionnement" aria-labelledby="titre-fonctionnement">
+      <h2 id="titre-fonctionnement">Comment ça marche</h2>
+      <ol>
+        <li>Choisis ton humeur.</li>
+        <li>Indique ton temps disponible, tes genres et avec qui tu regardes.</li>
+        <li>Reçois 3 films, chacun avec la raison de ce choix.</li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 — Dorian Cotting · Module ICT 291</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* Design tokens — CineMood, direction B (chaleureuse) avec les contours de la C */
+:root {
+  /* Palette 60-30-10 : crème 60 %, sauge 30 %, terracotta 10 % */
+  --color-bg: #f5efe3;
+  --color-surface: #fffaf0;
+  --color-secondary: #dde5d3;
+  --color-text: #2b3a2c;
+  --color-text-muted: #526050;
+  --color-primary: #a0452a;
+  --color-primary-hover: #86381f;
+  --color-on-primary: #ffffff;
+  --color-border: #2b3a2c;
+
+  /* Typographie */
+  --font-sans: "Avenir Next", "Trebuchet MS", system-ui, sans-serif;
+  --font-titre: "Arial Rounded MT Bold", "Avenir Next", system-ui, sans-serif;
+  --text-sm: 0.875rem;  /* 14 px */
+  --text-base: 1rem;    /* 16 px */
+  --text-lg: 1.25rem;   /* 20 px */
+  --text-xl: 1.5rem;    /* 24 px */
+  --text-2xl: 2rem;     /* 32 px */
+
+  /* Espacements sur une base de 8 px */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --radius-card: 16px;
+  --radius-champ: 12px;
+  --bordure: 2px solid var(--color-border);
+  --contenu-max: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: var(--font-titre);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p, ol, ul {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-text);
+  outline-offset: 3px;
+}
+
+/* En-tête */
+.entete {
+  padding: var(--space-3);
+  background-color: var(--color-secondary);
+}
+
+.logo {
+  font-size: var(--text-2xl);
+}
+
+.slogan {
+  margin-top: var(--space-1);
+}
+
+.nav-liens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.nav-liens a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 var(--space-3);
+  border: var(--bordure);
+  border-radius: 24px;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.nav-liens a[aria-current="page"] {
+  background-color: var(--color-text);
+  color: var(--color-surface);
+  font-weight: 700;
+}
+
+/* Contenu */
+.contenu {
+  max-width: var(--contenu-max);
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-3) var(--space-6);
+}
+
+.demande label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: 700;
+}
+
+.facultatif {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.demande input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 var(--space-3);
+  border: var(--bordure);
+  border-radius: var(--radius-champ);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.demande input::placeholder {
+  color: var(--color-text-muted);
+  opacity: 1;
+}
+
+#humeurs h2,
+.fonctionnement h2 {
+  margin: var(--space-5) 0 var(--space-3);
+  font-size: var(--text-xl);
+}
+
+/* Grille de cartes Mobile First */
+.cartes-grille {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.carte {
+  padding: var(--space-3);
+  border: var(--bordure);
+  border-radius: var(--radius-card);
+  background-color: var(--color-surface);
+}
+
+.carte h3 {
+  font-size: var(--text-lg);
+}
+
+.carte-texte {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.bientot {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+/* Encadré « Comment ça marche » */
+.fonctionnement {
+  margin-top: var(--space-5);
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  border-radius: var(--radius-card);
+  background-color: var(--color-secondary);
+}
+
+.fonctionnement h2 {
+  margin-top: var(--space-2);
+}
+
+.fonctionnement ol {
+  display: grid;
+  gap: var(--space-2);
+  padding-left: var(--space-4);
+}
+
+/* Pied de page */
+.pied {
+  padding: var(--space-4) var(--space-3);
+  border-top: var(--bordure);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+/* Bureau : 2 colonnes dès 768 px */
+@media (min-width: 768px) {
+  .entete {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: var(--space-4);
+    padding: var(--space-3) var(--space-5);
+  }
+
+  .slogan {
+    margin-top: 0;
+  }
+
+  .entete nav {
+    grid-column: 1 / -1;
+  }
+
+  .contenu {
+    padding: var(--space-5) var(--space-5) var(--space-6);
+  }
+
+  .demande input {
+    max-width: 480px;
+  }
+
+  .cartes-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
