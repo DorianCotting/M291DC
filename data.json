@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "titre": "Intouchables",
+    "annee": 2011,
+    "realisation": "Olivier Nakache et Éric Toledano",
+    "dureeMinutes": 112,
+    "genres": ["comédie", "drame"],
+    "humeurs": ["fatigue", "triste", "bonne-humeur"],
+    "contextes": ["seul", "couple", "amis", "famille"],
+    "resume": "Un riche aristocrate tétraplégique engage comme aide à domicile un jeune homme de banlieue, et leur amitié bouscule leurs deux vies.",
+    "estFrancophone": true,
+    "image": "images/intouchables.jpg"
+  },
+  {
+    "id": 2,
+    "titre": "La Famille Bélier",
+    "annee": 2014,
+    "realisation": "Éric Lartigau",
+    "dureeMinutes": 105,
+    "genres": ["comédie", "drame"],
+    "humeurs": ["fatigue", "triste", "bonne-humeur"],
+    "contextes": ["couple", "famille"],
+    "resume": "Seule entendante d'une famille sourde, Paula découvre un talent pour le chant qui pourrait l'éloigner des siens.",
+    "estFrancophone": true,
+    "image": "images/famille-belier.jpg"
+  },
+  {
+    "id": 3,
+    "titre": "Paddington 2",
+    "annee": 2017,
+    "realisation": "Paul King",
+    "dureeMinutes": 103,
+    "genres": ["comédie", "aventure"],
+    "humeurs": ["fatigue", "triste", "rire"],
+    "contextes": ["seul", "amis", "famille"],
+    "resume": "L'ours Paddington veut offrir un livre rare à sa tante, mais il est accusé à tort de l'avoir volé.",
+    "estFrancophone": false,
+    "image": "images/paddington-2.jpg"
+  },
+  {
+    "id": 4,
+    "titre": "Le Dîner de cons",
+    "annee": 1998,
+    "realisation": "Francis Veber",
+    "dureeMinutes": 80,
+    "genres": ["comédie"],
+    "humeurs": ["rire", "fatigue"],
+    "contextes": ["amis", "couple"],
+    "resume": "Un éditeur invite un homme naïf à un dîner moqueur, mais la soirée tourne à la catastrophe pour lui.",
+    "estFrancophone": true,
+    "image": "images/diner-de-cons.jpg"
+  },
+  {
+    "id": 5,
+    "titre": "Ma vie de Courgette",
+    "annee": 2016,
+    "realisation": "Claude Barras",
+    "dureeMinutes": 66,
+    "genres": ["animation", "drame"],
+    "humeurs": ["triste", "reflechir"],
+    "contextes": ["seul", "famille"],
+    "resume": "Après la mort de sa mère, un garçon de neuf ans arrive dans un foyer et y trouve peu à peu des amis.",
+    "estFrancophone": true,
+    "image": "images/ma-vie-de-courgette.jpg"
+  }
+]
