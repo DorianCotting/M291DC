@@ -9,6 +9,7 @@ Projet de l'année : **CineMood**, une application web qui recommande 3 films se
 | Dossier ou fichier | Contenu |
 |---|---|
 | [index.html](index.html), [style.css](style.css), [js/app.js](js/app.js) | L'application CineMood (écran d'accueil) |
+| [data.json](data.json), [data/](data/) | Base de 32 films, schéma de validation et documentation |
 | [brief.md](brief.md) | Brief de conception de CineMood |
 | [application/Design](application/Design/) | Pitch, persona, user flow, wireframes, propositions de design, critique, tests utilisateurs et maquette |
 | [exercices](exercices/) | Exercices du cours, un dossier par semaine |
@@ -29,3 +30,4 @@ Projet de l'année : **CineMood**, une application web qui recommande 3 films se
 | [s07](exercices/s07/) | Concevoir CineMood |
 | [s08](exercices/s08/) | Accessibilité et tests utilisateurs |
 | [s09](exercices/s09/) | Intégrer la maquette en vrai |
+| [s10](exercices/s10/) | Ma base de données JSON |
