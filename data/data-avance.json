@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "nom": "Ciné du Flon (exemple)",
+    "commune": "Lausanne",
+    "coordonnees": { "lat": 46.5197, "lng": 6.6323 },
+    "horaires": {
+      "lundi": [],
+      "mardi": [{ "ouverture": "17:30", "fermeture": "23:00" }],
+      "mercredi": [{ "ouverture": "13:30", "fermeture": "23:00" }],
+      "jeudi": [{ "ouverture": "17:30", "fermeture": "23:00" }],
+      "vendredi": [{ "ouverture": "17:30", "fermeture": "23:59" }],
+      "samedi": [{ "ouverture": "13:30", "fermeture": "18:00" }, { "ouverture": "19:30", "fermeture": "23:59" }],
+      "dimanche": [{ "ouverture": "13:30", "fermeture": "22:00" }]
+    },
+    "seances": [
+      { "filmId": 1, "jour": "vendredi", "heure": "20:30" },
+      { "filmId": 3, "jour": "samedi", "heure": "14:00" },
+      { "filmId": 5, "jour": "mercredi", "heure": "14:15" }
+    ]
+  },
+  {
+    "id": 2,
+    "nom": "Ciné des Bastions (exemple)",
+    "commune": "Genève",
+    "coordonnees": { "lat": 46.2044, "lng": 6.1432 },
+    "horaires": {
+      "lundi": [{ "ouverture": "18:00", "fermeture": "23:00" }],
+      "mardi": [{ "ouverture": "18:00", "fermeture": "23:00" }],
+      "mercredi": [{ "ouverture": "14:00", "fermeture": "23:00" }],
+      "jeudi": [{ "ouverture": "18:00", "fermeture": "23:00" }],
+      "vendredi": [{ "ouverture": "18:00", "fermeture": "23:59" }],
+      "samedi": [{ "ouverture": "14:00", "fermeture": "23:59" }],
+      "dimanche": []
+    },
+    "seances": [
+      { "filmId": 2, "jour": "lundi", "heure": "20:00" },
+      { "filmId": 4, "jour": "vendredi", "heure": "21:00" }
+    ]
+  },
+  {
+    "id": 3,
+    "nom": "Ciné de la Planta (exemple)",
+    "commune": "Sion",
+    "coordonnees": { "lat": 46.2331, "lng": 7.3606 },
+    "horaires": {
+      "lundi": [],
+      "mardi": [],
+      "mercredi": [{ "ouverture": "14:00", "fermeture": "22:30" }],
+      "jeudi": [{ "ouverture": "19:00", "fermeture": "22:30" }],
+      "vendredi": [{ "ouverture": "19:00", "fermeture": "23:30" }],
+      "samedi": [{ "ouverture": "14:00", "fermeture": "23:30" }],
+      "dimanche": [{ "ouverture": "14:00", "fermeture": "20:00" }]
+    },
+    "seances": [
+      { "filmId": 5, "jour": "dimanche", "heure": "15:00" },
+      { "filmId": 1, "jour": "samedi", "heure": "20:15" }
+    ]
+  }
+]

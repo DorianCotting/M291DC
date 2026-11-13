@@ -37,3 +37,15 @@ La base [data.json](../data.json), à la racine du dépôt, contient 32 films. E
 | `"annee": "2011"` (texte) | type string au lieu de integer |
 | `"humeurs": ["joyeux"]` | « joyeux » hors liste |
 | `"dureeMinutes": -5` | valeur inférieure à 1 |
+
+## Données imbriquées (s10-av2)
+
+[data-avance.json](data-avance.json) teste une structure plus riche sur 3 cinémas, en vue d'une future carte des salles :
+
+- `coordonnees` : un sous-objet `{ "lat", "lng" }`.
+- `horaires` : un objet avec les 7 jours de la semaine. Chaque jour contient une liste de plages `{ "ouverture", "fermeture" }` ; une liste vide signifie « fermé ». Le samedi peut ainsi avoir deux plages.
+- `seances` : une liste de séances qui renvoient aux films de `data.json` par `filmId`.
+
+**Données inventées :** les 3 cinémas et leurs horaires sont fictifs (d'où « exemple » dans leur nom). Les coordonnées sont celles du centre de Lausanne, Genève et Sion.
+
+**Vérification :** le fichier se lit sans erreur. Les coordonnées sont en Suisse romande, chaque `filmId` existe dans `data.json` et chaque séance tombe pendant une plage d'ouverture (20 contrôles sur 20).
