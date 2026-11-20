@@ -36,6 +36,7 @@ Publication : branche `main`, dossier racine. Chaque push sur `main` met le site
 
 - [Pitch](application/Design/pitch.md) · [Persona](application/Design/persona.md) · [User flow](application/Design/user-flow.md)
 - [Wireframes](application/Design/wireframes/)
+- [Grille de roast](application/Design/roast-grille.md)
 - [Propositions de design](application/Design/propositions/) · [Critique](application/Design/critique.md)
 - [Tests utilisateurs et audit d'accessibilité](application/Design/tests-utilisateurs.md) · [Maquette](application/Design/maquette/index.html)
 

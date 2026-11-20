@@ -23,3 +23,12 @@ Les notes s'appuient sur le code HTML et CSS des 4 pages (`captures/01` à `04`)
 - **02 :** les liens « menu · espace · plus » sont en minuscules, sans indication de la page actuelle.
 - **03 :** les champs « Email » et « Mot de passe » n'ont pas de `<label>` relié, donc un lecteur d'écran ne les annonce pas.
 - **04 :** les boutons « CLICK » et « BUY » sont en jaune sur magenta (2,92:1) et en 11 px ; « CLICK » et « info » ne disent pas ce qu'ils font.
+
+## Une correction mesurable par capture
+
+| Capture | Correction mesurable |
+|---|---|
+| 01 mur de texte | Le titre passe à 28 px en gras, les sous-titres à 20 px, et le texte à 16 px en `#333` (12,63:1 sur blanc). |
+| 02 labyrinthe | Un bouton principal « Voir la liste » de 48 px de haut apparaît directement sous « Bienvenue », et le chemin passe de 6 niveaux à 1 clic. |
+| 03 silence | Le bouton passe en texte blanc sur `#1d4ed8` (6,7:1), et au clic il affiche « Compte créé » pendant 3 secondes, ou un message d'erreur sous le champ concerné. |
+| 04 carnaval | Une seule police pour le texte et une pour les titres ; le texte passe en noir sur blanc (21:1), et les articles en promotion reçoivent le mot « Promo » en plus de la couleur. |
