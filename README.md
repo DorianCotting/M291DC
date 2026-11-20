@@ -4,6 +4,23 @@ Module 291 — Développer des interfaces utilisateurs (UI).
 
 Projet de l'année : **CineMood**, une application web qui recommande 3 films selon l'humeur, le temps disponible et les préférences du moment. Le [brief](brief.md) décrit le projet.
 
+## Site en ligne (GitHub Pages)
+
+- Application : https://doriancotting.github.io/M291DC/
+- Maquette cliquable : https://doriancotting.github.io/M291DC/application/Design/maquette/
+
+Publication : branche `main`, dossier racine. Chaque push sur `main` met le site à jour.
+
+**Test en direct du 20.11.2026, sur la version en ligne :**
+
+| Vérification | Résultat |
+|---|---|
+| L'accueil s'ouvre, avec ses styles et ses 7 cartes d'humeur | Réussi |
+| `style.css`, `js/app.js` et `data.json` se chargent (code 200) | Réussi |
+| `data.json` se lit sans erreur dans le navigateur (32 films) | Réussi |
+| Pas de défilement horizontal | Réussi |
+| Maquette de bout en bout : humeur « Fatigué·e » → genre « Comédie » → 3 films → fiche → « J'aime » → confirmation | Réussi |
+
 ## Organisation du dépôt
 
 | Dossier ou fichier | Contenu |
